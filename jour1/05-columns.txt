@@ -69,3 +69,9 @@ Créer la table client dans la base demo, contient les colonnes suivantes :
     dt_creation_profil : AAAA-MM-JJ HH:MM:SS
     nb_article_achete : chiffre entier maximum de 65 535
 
+
+=> colonne titre VARCHAR(30)
+=> colonne titre CHAR(30)
+
+Lorem ipsum dolor sit ........
+

@@ -1,0 +1,51 @@
+Dans une base de données => stocker plusieurs tables 
+
+pouvoir créer des relations entre ces tables 
+
+1:1
+
+PRODUITS
+#id INT UNSIGNED A_I PRIMARY KEY
+nom VARCHAR(200) 
+
+IMAGES
+#id  INT UNSIGNED A_I PRIMARY KEY
+url TEXT
+
+PROFILS 
+#id  INT UNSIGNED A_I PRIMARY KEY
+nom VARCHAR(200) 
+
+liaison entre ces deux tables une image ne peut être lié qu'à 1 seul produit 
+
+1:n 0:n
+
+ARTICLES 
+#id  INT UNSIGNED A_I PRIMARY KEY
+titre TEXT
+
+liaison entre les deux tables 1:n
+
+CATEGORIES
+#id  INT UNSIGNED A_I PRIMARY KEY
+nom VARCHAR(200)
+
+
+n:n
+ARTICLES 
+#id  INT UNSIGNED A_I PRIMARY KEY
+titre TEXT
+
+ARTICLES_AUTEUR
+article_id
+auteur_id
+
+AUTEURS
+#id  INT UNSIGNED A_I PRIMARY KEY
+nom VARCHAR(200)
+
+=> modéliser une base de données 
+
+=> MCD => Modèle Conceptuel de données
+=> MLD => Modèle Logique de Données
+

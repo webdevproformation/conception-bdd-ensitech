@@ -1,0 +1,31 @@
+
+=> plateforme de streaming 
+diffuser film et série 
+
+Video
+id  PK 
+nom  VARCHAR (255)
+dt_publication DATETIME 
+disponibilite BOOLEAN
+dt_debut DATETIME
+dt_fin   DATETIME
+Type BOOLEAN
+
+associer à une ou plusieurs vidéos 1 - n
+
+Serie 
+id PK
+nom 
+
+Catégories relation 
+id PK 
+nom 
+url image 
+
+
+
+
+
+
+
+

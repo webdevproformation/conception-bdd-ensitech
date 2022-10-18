@@ -1,0 +1,38 @@
+Outil de conception de base de données 
+
+créer des schemas qui décrivent l'organisation de vos tableaux dans votre base 
+
+outil permet de convertir les schema dans plusieurs formats 
+
+E/A => Entité Association 
+Entité (Table)
+Attribut (Colonne)
+
+UML => Diagramme de class (Cahier des charges)
+
+MLD => Modèle Logique des Données (comment mettre en oeuvre votre schéma dans un SGBD)
+
+
+-> créer une autre entité dans Looping
+Auteur 
+id clé primaire
+nom texte maximum de 255
+email texte maximum de 255
+dt_naissance AAAA-MM-JJ HH:MM:SS 
+site_internet : texte long 
+
+---------------------------
+
+Créer une nouvelle entité Categories
+id clé primaire
+nom texte maximum de 255
+
+créer une association 'contient'
+
+un article pourra être associé à une seule catégorie
+une catégorie peut être associée à plusieurs articles 
+
+
+id => souligné PK 
+
+id_1 => couleur bleue Foreign Key 

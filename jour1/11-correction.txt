@@ -1,0 +1,62 @@
+CREATE TABLE salles(
+   id_salle INT,
+   localisation VARCHAR(50),
+   capacite BYTE,
+   nom VARCHAR(50),
+   duree_tranche LOGICAL,
+   PRIMARY KEY(id_salle)
+);
+
+CREATE TABLE users(
+   id_user INT,
+   role LOGICAL,
+   PRIMARY KEY(id_user)
+);
+
+CREATE TABLE produits(
+   id_produit INT,
+   nom VARCHAR(50),
+   prix DECIMAL(15,2),
+   PRIMARY KEY(id_produit)
+);
+
+CREATE TABLE équipements(
+   id_equipement INT,
+   nom VARCHAR(50),
+   PRIMARY KEY(id_equipement)
+);
+
+CREATE TABLE commande(
+   id_commande INT,
+   dt_commande VARCHAR(50),
+   total DECIMAL(15,2),
+   id_user INT NOT NULL,
+   PRIMARY KEY(id_commande),
+   FOREIGN KEY(id_user) REFERENCES users(id_user)
+);
+
+CREATE TABLE réserve(
+   id_salle INT,
+   id_user INT,
+   dt_debut VARCHAR(50),
+   dt_fin VARCHAR(50),
+   PRIMARY KEY(id_salle, id_user),
+   FOREIGN KEY(id_salle) REFERENCES salles(id_salle),
+   FOREIGN KEY(id_user) REFERENCES users(id_user)
+);
+
+CREATE TABLE contient(
+   id_salle INT,
+   id_equipement INT,
+   PRIMARY KEY(id_salle, id_equipement),
+   FOREIGN KEY(id_salle) REFERENCES salles(id_salle),
+   FOREIGN KEY(id_equipement) REFERENCES équipements(id_equipement)
+);
+
+CREATE TABLE comprend(
+   id_produit INT,
+   id_commande INT,
+   PRIMARY KEY(id_produit, id_commande),
+   FOREIGN KEY(id_produit) REFERENCES produits(id_produit),
+   FOREIGN KEY(id_commande) REFERENCES commande(id_commande)
+);
