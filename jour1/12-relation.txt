@@ -1,0 +1,29 @@
+CREATE TABLE articles(
+   id_article INT,
+   titre VARCHAR(50),
+   PRIMARY KEY(id_article)
+);
+
+CREATE TABLE commentaires(
+   id_article INT,
+   id_commentaire INT,
+   message TEXT,
+   PRIMARY KEY(id_article, id_commentaire),
+   FOREIGN KEY(id_article) REFERENCES articles(id_article)
+    ON DELETE RESTRICT / CASCADE / SET NULL / NO ACTION 
+    ON UPDATE RESTRICT / CASCADE / SET NULL / NO ACTION 
+);
+
+// contraintes supplémentaires sur la relation
+// si je supprime l'article 
+// si je modifie l'id de l'article 
+
+// DELETE articles where id = 1;
+
+commentaires
+id_commentaire     id_article
+1                  1
+2                  1
+3                  2
+
+// DELETE commentaires WHERE id_article_associe = 1 ;

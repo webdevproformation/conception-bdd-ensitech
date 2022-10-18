@@ -1,0 +1,37 @@
+Dernier cas 
+
+user 
+id 
+nom
+email
+
+Article
+id
+titre
+contenu 
+
+=> utilisateur peut créer 0 à n articles
+=> article ne peut être associé qu'à 1 user 
+
+=> si vous supprimez un compte utilisateur => supprimer automatiquement les articles créés par ce user 
+
+
+Correction :
+
+CREATE TABLE users(
+   id_user INT,
+   nom VARCHAR(50),
+   email VARCHAR(50),
+   PRIMARY KEY(id_user)
+);
+
+CREATE TABLE articles(
+   id_user INT,
+   id_article INT,
+   titre VARCHAR(50),
+   contenu TEXT,
+   PRIMARY KEY(id_user, id_article),
+   FOREIGN KEY(id_user) REFERENCES ON DELETE CASCADE users(id_user)
+);
+
+
