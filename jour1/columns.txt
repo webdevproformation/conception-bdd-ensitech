@@ -1,0 +1,71 @@
+Dans une base de données 
+
+=> colonnes 
+=> contenir un type de données
+
+3 grands type de données 
+
+=> chiffres 
+- chiffres entiers  => chiffres sans virgule 
+- valeur maximum du chiffre que vous voulez enregistrer 
+TINYINT => chiffre stocké sur 1 octet => 2^8 => 0 - 255 
+SMALLINT => chiffre entier sur 2 octets => 0 à 65 535
+MEDIUMINT => chiffre entier sur 3 octets => 0 à 16 777 215
+INT => chiffre entier sur 4 octets => 4 milliards
+BIGINT => chiffre entier sur 8 octets => 0 à 18 millards de milliards
+
+
+- chiffres à virgules =>
+FLOAT  => chiffre stocké sur 4 octet
+DOUBLE  => chiffre stocké sur 8 octet
+DECIMAL  => => plus 
+
+
+=> Boolean =>
+0 
+1 
+Homme / Femme 
+Ouvert / fermé
+Encours / Finie 
+
+
+=> Texte 
+CHAR(2)  => permet d'avoir une chaine de caractère qui contient exactement 2 lettres 
+VARCHAR(2) => permet de stocker une chaine de caractère qui contient au maximum 2 lettres 
+Valeur maximum possible pour les CHAR et VARCHAR => 255 
+TEXT => 65000
+MEDIUMTEXT => 16 millions de caractères
+LONGTEXT => 4 milliards
+
+
+
+
+=> date 
+=> DATE AAAA-MM-JJ
+=> DATETIME  AAAA-MM-JJ HH:MM:SS
+=> TIME HH:MM:SS
+=> TIMESTAMP le nombre de secondes entre maintenant et 1er janvier 1970 
+
+DATE debut 123456789
+DATE fin 1234789456
+
+=> 
+
+
+=> autre (données géographiques)
+{
+    lat: "",
+    long : ""
+}
+
+
+Créer la table client dans la base demo, contient les colonnes suivantes :
+
+    id clé primaire
+    prenom (chaine max 30 caractères)
+    nom (chaine max 30 caractères)
+    dt_naissance (AAAA-MM-JJ)
+    description texte qui aura comme maxuimum 1000 caractères 
+    dt_creation_profil : AAAA-MM-JJ HH:MM:SS
+    nb_article_achete : chiffre entier maximum de 65 535
+
