@@ -1,0 +1,85 @@
+SGBD = Système de Gestion de Base de Données 
+
+data stockées on ne peut y accéder directement 
+on passe OBLIGATOIREMENT par le SGBD 
+ce logiciel qui va faire toutes les manipulations sur données 
+
+=> CRUD 
+Create => INSERT INTO
+Read => SELECT (récupérer des informations)
+Update => mettre à jour une ou plusieurs lignes dans la BDD 
+Delete => supprimer une ou plusieurs informations 
+
+const a = {
+    nom : "Patrice",
+    adresse : "75 rue de Paris"
+};
+
+=> POur communiquer avec le SGBD 
+
+=> un langage spécifique a été créé => SQL 
+=> Structured Query Language
+
+=> mot clé du langage SQL (qui contient plus de 400 mots clé )
+=> DATA DEFINITION LANGUAGE ( DDL )  **** 
+=> DATA MANIPULATION LANGUAGE (DML) 
+=> DATA CONTROL LANGUAGE (DCL) 
+
+
+=> créer des TABLES / COLUMNS / BASE 
+=> supprimer la table DROP 
+=> modifier UPDATE
+=> récupérer SHOW
+=> AJouter CREATE 
+
+=> comparaison avec Windows 
+
+=> Base (Dossier)
+=> Table (Fichier)
+=> Colonne (Sommaire du fichier)
+=> Enregistrement (tuple) (information (data))
+
+const a = [ // collection tableau qui contient plusieurs objets
+    {
+    nom : "Patrice",
+    adresse : "75 rue de Paris"
+    },
+        {
+        nom : "Sophie",
+        adresse : "75 rue de Marseille"
+    }
+]
+
+// distingue 
+=> SGBD avec une licence payante 
+=> SGBD avec sans licence payante 
+
+=> en fonction du SGBD que vous allez utiliser 
+=> certains mots clés de SQL non présent / Manière d'écrire ses requêtes peut être un peu différent
+
+=> installer XAMPP (windows)
+=> installer MAMP (MacOS)
+=> en ligne de commande (Chrome OS)
+
+
+XAMPP
+X => Cross 
+A => Apache
+M => MariaDB
+P => mod_php de apache 
+P => perl 
+
+=> phpMyAdmin (site internet )
+=> modifier via un site internet votre base de données 
+
+
+=> une fois le serveur local installé 
+=> lancer phpMyAdmin 
+
+=> dans XAMPP => cliquer sur le bouton Admin (liste mySQL)
+=> http://localhost/phpmyadmin/
+
+=> dans MAMP => sur le bouton Open Start Page > Tools > phpMyAdmin 
+=> http://localhost:8889/phpmyadmin/
+
+

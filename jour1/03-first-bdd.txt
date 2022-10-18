@@ -1,0 +1,21 @@
+installer XAMPP / MAMP que que ça fonctionne 
+
+=> demarrer les services APache / MySQL 
+=> lancer phpMyAdmin 
+=> http://localhost/phpmyadmin/
+=> http://localhost:8889/phpmyadmin/
+
+-----------
+
+Créer une base de données 
+nom : demo
+encodage : utf8mb4_general_ci 
+
+a => 00000011 
+
+utf8 => norme qui permet de gérer dynamiquement le nombre de bit alloué pour stocker des caractères dans le disque dur 
+
+general_ci => Case Insensitif  => recherche dans la base de données que ce soit avec des lettres en majsucule ou minuscule (insensible à la casse)
+
+mb4 => https://emojipedia.org/ => 🦁
+
