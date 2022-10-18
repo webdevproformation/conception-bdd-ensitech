@@ -1,0 +1,49 @@
+Chap1 : Diviser pour mieux règner 
+
+html / css / js 
+
+const listePays = [
+  "Sélectionner une valeur",
+  "France",
+  "Belgique",
+  "Allemagne",
+  "Espagne",
+  "Lituanie",
+  "USA"
+];
+
+const listeSexe = ["Sélectionnez une valeur", "Homme", "Femme"];
+// je suis en train de créer une base de données textuelle
+
+// créer des tableaux multidimensionnels
+
+const listePaysMulti = [
+  {
+    id: 1,
+    capital: "Paris",
+    pays: "France"
+  },
+  {
+    id: 2,
+    capital: "Bruxelles",
+    pays: "Belgique"
+  }
+];
+
+=> Base de données au format JSON // limite 
+
+=> manipuler votre variable , ""
+=> plus les données sont importantes => plus c'est compliquer de réaliser cette variable json 
+
+=> Sécurité => visible facilement / impossible de bloquer la lecture des données 
+confidentielle (données de paie)
+
+=> Base de données => 70 
+
+=> En 1970 Edgar Frank Codd, (utilisation des mathématiques ensemblistes)
+=> Base de données Relationnelles
+
+
+=> comment concevoir une base de données Relationnelle 
+
+=> SQL 
