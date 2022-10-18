@@ -8,3 +8,6 @@ Conception de Base de Données
 https://formation.webdevpro.net/sgbd
 login : sgbd
 password : sql
+
+Toutes les notes de cours sont disponibles sur :
+https://github.com/webdevproformation/conception-bdd-ensitech
